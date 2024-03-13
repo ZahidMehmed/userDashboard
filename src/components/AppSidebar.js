@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { CSidebar, CSidebarBrand, CSidebarNav, CSidebarToggler } from '@coreui/react';
 import { AppSidebarNav } from './AppSidebarNav';
-import logo from '../assets/images/my discount 1 1.png';
+import logo from '../assets/images/logo.png';
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 import '../assets/CSS/Category.css';
@@ -32,9 +32,9 @@ const AppSidebar = () => {
         }
       }}
     >
-      <CSidebarBrand className="d-none d-md-flex" to="/">
-        <img className="img-fluid" src={logo} style={{ width: '50px' }} alt="logo" />
-        <CardTitle tag="h6">MYDISCOUNT</CardTitle>
+      <CSidebarBrand className="d-none justify-content-start d-md-flex" to="/">
+        <img className="img-fluid" src={logo} style={{ width: '150px' }} alt="logo" />
+        {/* <CardTitle tag="h6">MYDISCOUNT</CardTitle> */}
       </CSidebarBrand>
       <CSidebarNav>
         <SimpleBar>
